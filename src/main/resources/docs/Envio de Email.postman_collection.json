@@ -1,0 +1,38 @@
+{
+	"info": {
+		"_postman_id": "0da1c7b9-dd5f-4015-960a-42754798489e",
+		"name": "Envio de Email",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21764310"
+	},
+	"item": [
+		{
+			"name": "Sending-Email",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"ownerRef\": \"Angelo A. Bezutti\",\r\n    \"emailFrom\": \"**********@gmail.com\",\r\n    \"emailTo\": \"********@gmail.com\",\r\n    \"subject\": \"Teste do MS de email\",\r\n    \"text\": \"APENAS TESTANDO O MICROSSERVIÇO\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/sending-email",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"sending-email"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
